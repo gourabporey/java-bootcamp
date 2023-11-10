@@ -39,4 +39,10 @@ public class RectangleTest {
     Rectangle square = Rectangle.create(5);
     assertEquals(25, square.area());
   }
+
+  @Test
+  void shouldCalculateThePerimeterOfASquare() throws InvalidDimensionException {
+    Rectangle square = Rectangle.create(6);
+    assertEquals(24, square.perimeter());
+  }
 }

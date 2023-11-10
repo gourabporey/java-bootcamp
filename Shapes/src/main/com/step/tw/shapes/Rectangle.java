@@ -10,12 +10,16 @@ public class Rectangle {
   }
 
   public static Rectangle create(int length, int breadth) throws InvalidDimensionException {
-    boolean isLengthValid = length >= 0;
-    boolean isBreadthValid = breadth >= 0;
+    boolean isLengthValid = isValid(length);
+    boolean isBreadthValid = isValid(breadth);
 
     if (!isLengthValid || !isBreadthValid) throw new InvalidDimensionException();
 
     return new Rectangle(length, breadth);
+  }
+
+  private static boolean isValid(int side) {
+    return side >= 0;
   }
 
   public static Rectangle create(int side) throws InvalidDimensionException {
