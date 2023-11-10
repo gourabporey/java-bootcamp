@@ -14,8 +14,12 @@ public class Rectangle {
     boolean isBreadthValid = breadth >= 0;
 
     if (!isLengthValid || !isBreadthValid) throw new InvalidDimensionException();
-    
+
     return new Rectangle(length, breadth);
+  }
+
+  public static Rectangle create(int side) throws InvalidDimensionException {
+    return Rectangle.create(side, side);
   }
 
   public int area() {

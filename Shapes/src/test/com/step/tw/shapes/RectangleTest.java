@@ -16,7 +16,7 @@ public class RectangleTest {
   void shouldThrowAnExceptionForLengthLessThanZero() {
     assertThrows(InvalidDimensionException.class, () -> Rectangle.create(-5, 6));
   }
-  
+
   @Test
   void shouldThrowAnExceptionForBreadthLessThanZero() {
     assertThrows(InvalidDimensionException.class, () -> Rectangle.create(5, -6));
@@ -32,5 +32,11 @@ public class RectangleTest {
   void shouldCalculateThePerimeterOfARectangle() throws InvalidDimensionException {
     Rectangle rectangle = Rectangle.create(2, 3);
     assertEquals(10, rectangle.perimeter());
+  }
+
+  @Test
+  void areaShouldBeTheSquareOfSideForASquare() throws InvalidDimensionException {
+    Rectangle square = Rectangle.create(5);
+    assertEquals(25, square.area());
   }
 }
