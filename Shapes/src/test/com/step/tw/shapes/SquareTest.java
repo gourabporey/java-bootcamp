@@ -9,5 +9,4 @@ public class SquareTest {
   void shouldThrowAnExceptionIfSideIsLessThanZero() {
     assertThrows(InvalidDimensionException.class, () -> Square.create(-4));
   }
-
 }

@@ -9,7 +9,12 @@ public class Rectangle {
     this.breadth = breadth;
   }
 
-  public static Rectangle create(int length, int breadth) {
+  public static Rectangle create(int length, int breadth) throws InvalidDimensionException {
+    boolean isLengthValid = length >= 0;
+    boolean isBreadthValid = breadth >= 0;
+
+    if (!isLengthValid || !isBreadthValid) throw new InvalidDimensionException();
+    
     return new Rectangle(length, breadth);
   }
 
@@ -20,4 +25,5 @@ public class Rectangle {
   public int perimeter() {
     return 2 * (this.length + this.breadth);
   }
+
 }
