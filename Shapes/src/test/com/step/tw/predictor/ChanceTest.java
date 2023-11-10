@@ -21,4 +21,11 @@ public class ChanceTest {
     Chance chance = Chance.initialize(0.4);
     assertEquals(chance.inverse(), Chance.initialize(0.6));
   }
+
+  @Test
+  void shouldComputeChanceOfOccurringTwoIndependentEventSimultaneously() throws InvalidChanceRangeException {
+    Chance chance1 = Chance.initialize(0.5);
+    Chance chance2 = Chance.initialize(0.5);
+    assertEquals(chance1.and(chance2), Chance.initialize(0.25));
+  }
 }

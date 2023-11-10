@@ -31,4 +31,8 @@ public class Chance {
     Chance chance = (Chance) anotherChance;
     return Double.compare(this.value, chance.value) == 0;
   }
+
+  public Chance and(Chance anotherChance) throws InvalidChanceRangeException {
+    return Chance.initialize(this.value * anotherChance.value);
+  }
 }
