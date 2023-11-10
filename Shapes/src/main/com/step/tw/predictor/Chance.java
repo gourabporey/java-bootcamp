@@ -10,13 +10,13 @@ public class Chance {
     this.value = value;
   }
 
-  public static Chance initialize(double value) throws InvalidChanceRangeException {
+  public static Chance of(double value) throws InvalidChanceRangeException {
     if (value < 0 || value > 1) throw new InvalidChanceRangeException(value);
     return new Chance(value);
   }
 
   public Chance inverse() throws InvalidChanceRangeException {
-    return Chance.initialize(1 - this.value);
+    return Chance.of(1 - this.value);
   }
 
   @Override
@@ -33,6 +33,11 @@ public class Chance {
   }
 
   public Chance and(Chance anotherChance) throws InvalidChanceRangeException {
-    return Chance.initialize(this.value * anotherChance.value);
+    return Chance.of(this.value * anotherChance.value);
+  }
+
+  public Chance or(Chance anotherChance) throws InvalidChanceRangeException {
+    Chance chanceOfOccurringBoth = this.and(anotherChance);
+    return Chance.of(this.value + anotherChance.value - chanceOfOccurringBoth.value);
   }
 }

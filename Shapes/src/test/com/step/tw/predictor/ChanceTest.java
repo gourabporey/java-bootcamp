@@ -8,24 +8,35 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class ChanceTest {
   @Test
   public void shouldThrowAnExceptionForChanceBeingLessThanZero() {
-    assertThrows(InvalidChanceRangeException.class, () -> Chance.initialize(-0.1));
+    assertThrows(InvalidChanceRangeException.class, () -> Chance.of(-0.1));
   }
 
   @Test
   public void shouldThrowAnExceptionForChanceBeingGreaterThanOne() {
-    assertThrows(InvalidChanceRangeException.class, () -> Chance.initialize(1.1));
+    assertThrows(InvalidChanceRangeException.class, () -> Chance.of(1.1));
   }
 
   @Test
   void shouldCalculateTheInverseOfAChanceOfAnEvent() throws InvalidChanceRangeException {
-    Chance chance = Chance.initialize(0.4);
-    assertEquals(chance.inverse(), Chance.initialize(0.6));
+    Chance chanceOfGettingTail = Chance.of(0.4);
+    assertEquals(chanceOfGettingTail.inverse(), Chance.of(0.6));
   }
 
   @Test
-  void shouldComputeChanceOfOccurringTwoIndependentEventSimultaneously() throws InvalidChanceRangeException {
-    Chance chance1 = Chance.initialize(0.5);
-    Chance chance2 = Chance.initialize(0.5);
-    assertEquals(chance1.and(chance2), Chance.initialize(0.25));
+  void shouldComputeChanceOfOccurringTwoEventsSimultaneously() throws InvalidChanceRangeException {
+    Chance chanceOfGettingTail = Chance.of(0.5);
+    Chance chanceOfGettingBothTails = Chance.of(0.25);
+
+    assertEquals(chanceOfGettingTail.and(chanceOfGettingTail), chanceOfGettingBothTails);
+  }
+
+  void shouldComputeChanceThatAtLeastOneEventWillOccur() throws InvalidChanceRangeException {
+    Chance chanceOfGettingTailInCoin1 = Chance.of(0.5);
+    Chance chanceOfGettingTailInCoin2 = Chance.of(0.5);
+
+    Chance chanceOfGettingAtLeastOneTail = Chance.of(0.75);
+
+    assertEquals(chanceOfGettingTailInCoin1.or(chanceOfGettingTailInCoin2), chanceOfGettingAtLeastOneTail);
   }
 }
+
