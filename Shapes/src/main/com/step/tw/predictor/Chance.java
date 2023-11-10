@@ -1,5 +1,7 @@
 package com.step.tw.predictor;
 
+import java.util.Objects;
+
 public class Chance {
 
   private final double value;
@@ -17,8 +19,16 @@ public class Chance {
     return Chance.initialize(1 - this.value);
   }
 
-  public boolean equals(Object another) {
-    if (!(another instanceof Chance)) return false;
-    return this.value == ((Chance) another).value;
+  @Override
+  public int hashCode() {
+    return Objects.hash(this.value);
+  }
+
+  @Override
+  public boolean equals(Object anotherChance) {
+    if (this == anotherChance) return true;
+    if (anotherChance == null || this.getClass() != anotherChance.getClass()) return false;
+    Chance chance = (Chance) anotherChance;
+    return Double.compare(this.value, chance.value) == 0;
   }
 }
