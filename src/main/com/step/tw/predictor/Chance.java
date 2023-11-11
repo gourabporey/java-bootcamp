@@ -37,7 +37,6 @@ public class Chance {
   }
 
   public Chance or(Chance anotherChance) throws InvalidChanceRangeException {
-    Chance chanceOfOccurringBoth = this.and(anotherChance);
-    return Chance.of(this.value + anotherChance.value - chanceOfOccurringBoth.value);
+    return this.inverse().and(anotherChance.inverse()).inverse();
   }
 }

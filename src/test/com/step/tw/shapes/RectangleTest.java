@@ -23,7 +23,7 @@ public class RectangleTest {
   }
 
   @Test
-  void areaShouldBeZeroForNoLengthOrBreadth() throws InvalidDimensionException {
+  void areaShouldBeZeroForZeroLengthOrBreadth() throws InvalidDimensionException {
     Rectangle rectangle = Rectangle.create(1, 0);
     assertEquals(0, rectangle.area());
   }

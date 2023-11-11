@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7d19d4f0-1d58-43b8-b29d-df84e86ff22f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/shapes/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/shapes/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/predictor/Chance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/predictor/Chance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/step/tw/shapes/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/step/tw/shapes/RectangleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +31,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.RectangleTest">
+  <component name="RunManager" selected="JUnit.All in java-bootcamp">
     <configuration name="All in java-bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
       <option name="PACKAGE_NAME" value="" />
@@ -57,8 +57,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RectangleTest" />
         <item itemvalue="JUnit.All in java-bootcamp" />
+        <item itemvalue="JUnit.RectangleTest" />
       </list>
     </recent_temporary>
   </component>
