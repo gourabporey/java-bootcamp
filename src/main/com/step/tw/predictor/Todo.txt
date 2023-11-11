@@ -1,0 +1,7 @@
+@Test
+  void shouldCheckTheEqualityOfVolumeUnits() {
+    Length oneGallon = Length.of(1, VolumeUnit.GALLON);
+    Length three_SevenEightLitres = Length.of(3.78, VolumeUnit.LITER);
+
+    assertEquals(oneGallon, three_SevenEightLitres);
+  }

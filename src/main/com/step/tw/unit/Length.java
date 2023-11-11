@@ -2,24 +2,24 @@ package com.step.tw.unit;
 
 import java.util.Objects;
 
-public class Unit {
+public class Length {
   private final double measurement;
-  private final Measurable lengthUnit;
+  private final LengthUnit lengthUnit;
 
-  private Unit(double measurement, Measurable lengthUnit) {
+  private Length(double measurement, LengthUnit lengthUnit) {
     this.measurement = measurement;
     this.lengthUnit = lengthUnit;
   }
 
-  public static Unit of(double measurement, Measurable lengthUnit) {
-    return new Unit(measurement, lengthUnit);
+  public static Length of(double measurement, LengthUnit lengthUnit) {
+    return new Length(measurement, lengthUnit);
   }
 
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
-    Unit unit = (Unit) o;
+    Length unit = (Length) o;
     return Math.abs(this.convertToStandard() - unit.convertToStandard()) < 1;
   }
 
@@ -38,5 +38,10 @@ public class Unit {
   @Override
   public int hashCode() {
     return Objects.hash(measurement);
+  }
+
+  public Length add(Length other) {
+    double sumOfLengthInInches = this.convertToStandard() * other.convertToStandard();
+    return new Length(sumOfLengthInInches, LengthUnit.INCH);
   }
 }

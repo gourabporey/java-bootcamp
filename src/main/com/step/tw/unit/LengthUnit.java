@@ -13,6 +13,6 @@ public enum LengthUnit implements Measurable {
   }
 
   public double convertToStandard(double measurement) {
-    return this.conversionFactor * measurement;
+    return this.conversionFactor * measurement / 25.4;
   }
 }
