@@ -1,6 +1,6 @@
 package com.step.tw.unit;
 
-public enum LengthUnit {
+public enum LengthUnit implements Measurable {
   INCH(25.4),
   CENTIMETER(10),
   FEET(304.8),
