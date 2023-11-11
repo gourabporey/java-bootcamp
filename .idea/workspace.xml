@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d19d4f0-1d58-43b8-b29d-df84e86ff22f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/unit/Volume.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/step/tw/unit/VolumeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/step/tw/unit/VolumeUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/unit/VolumeUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/unit/Volume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/unit/Volume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/step/tw/unit/VolumeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/step/tw/unit/VolumeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +49,7 @@
       <recent name="com.step.tw.unit" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in java-bootcamp">
+  <component name="RunManager" selected="JUnit.com.step.tw.unit in java-bootcamp">
     <configuration name="All in java-bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
       <option name="PACKAGE_NAME" value="" />
@@ -91,22 +89,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LengthTest.shouldCheckTheEqualityOfVolumeUnits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.step.tw.unit.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.step.tw.unit" />
-      <option name="MAIN_CLASS_NAME" value="com.step.tw.unit.LengthTest" />
-      <option name="METHOD_NAME" value="shouldCheckTheEqualityOfVolumeUnits" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="VolumeTest.shouldCheckTheEqualityOfVolumeUnits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
       <extension name="coverage">
@@ -123,13 +105,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.step.tw.unit in java-bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.tw.unit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.step.tw.unit" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.com.step.tw.unit in java-bootcamp" />
         <item itemvalue="JUnit.All in java-bootcamp" />
         <item itemvalue="JUnit.VolumeTest.shouldCheckTheEqualityOfVolumeUnits" />
         <item itemvalue="JUnit.LengthTest" />
         <item itemvalue="JUnit.LengthTest.shouldAddTwoLengthOfSameUnits" />
-        <item itemvalue="JUnit.LengthTest.shouldCheckTheEqualityOfVolumeUnits" />
       </list>
     </recent_temporary>
   </component>

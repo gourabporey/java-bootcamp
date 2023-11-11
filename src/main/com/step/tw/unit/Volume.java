@@ -39,4 +39,9 @@ public class Volume {
         ", volumeUnit=" + volumeUnit +
         '}';
   }
+
+  public Volume add(Volume volume) {
+    double sumOfVolumes =  this.convertToStandard() + volume.convertToStandard();
+    return new Volume(sumOfVolumes, VolumeUnit.LITER);
+  }
 }
