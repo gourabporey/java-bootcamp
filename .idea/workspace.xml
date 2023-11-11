@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d19d4f0-1d58-43b8-b29d-df84e86ff22f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/unit/Unit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/step/tw/unit/UnitTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/predictor/Chance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/predictor/Chance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/step/tw/shapes/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/step/tw/shapes/RectangleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,7 +38,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.All in java-bootcamp">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.step.tw.unit" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.UnitTest">
     <configuration name="All in java-bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
       <option name="PACKAGE_NAME" value="" />
@@ -55,8 +67,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.tw.unit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.step.tw.unit" />
+      <option name="MAIN_CLASS_NAME" value="com.step.tw.unit.UnitTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UnitTest" />
         <item itemvalue="JUnit.All in java-bootcamp" />
         <item itemvalue="JUnit.RectangleTest" />
       </list>
