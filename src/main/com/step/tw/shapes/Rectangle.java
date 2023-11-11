@@ -1,15 +1,15 @@
 package com.step.tw.shapes;
 
 public class Rectangle {
-  private final int length;
-  private final int breadth;
+  private final double length;
+  private final double breadth;
 
-  private Rectangle(int length, int breadth) {
+  private Rectangle(double length, double breadth) {
     this.length = length;
     this.breadth = breadth;
   }
 
-  public static Rectangle create(int length, int breadth) throws InvalidDimensionException {
+  public static Rectangle create(double length, double breadth) throws InvalidDimensionException {
     boolean isLengthValid = isValid(length);
     boolean isBreadthValid = isValid(breadth);
 
@@ -18,20 +18,19 @@ public class Rectangle {
     return new Rectangle(length, breadth);
   }
 
-  private static boolean isValid(int side) {
+  private static boolean isValid(double side) {
     return side >= 0;
   }
 
-  public static Rectangle create(int side) throws InvalidDimensionException {
+  public static Rectangle create(double side) throws InvalidDimensionException {
     return Rectangle.create(side, side);
   }
 
-  public int area() {
+  public double area() {
     return this.length * this.breadth;
   }
 
-  public int perimeter() {
+  public double perimeter() {
     return 2 * (this.length + this.breadth);
   }
-
 }

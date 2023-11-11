@@ -8,8 +8,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class RectangleTest {
   @Test
   void shouldCalculateTheAreaOfARectangle() throws InvalidDimensionException {
-    Rectangle rectangle = Rectangle.create(1, 2);
-    assertEquals(2, rectangle.area());
+    Rectangle rectangle = Rectangle.create(1.0, 2.0);
+    assertEquals(2.0, rectangle.area());
   }
 
   @Test
