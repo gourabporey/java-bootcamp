@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d19d4f0-1d58-43b8-b29d-df84e86ff22f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/unit/Measurable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/unit/Length.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/unit/Unit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/unit/LengthUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/unit/LengthUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/step/tw/unit/LengthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/step/tw/unit/UnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/step/tw/unit/VolumeUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/step/tw/unit/UnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/step/tw/unit/UnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -58,21 +55,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RectangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.step.tw.shapes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.step.tw.shapes" />
-      <option name="MAIN_CLASS_NAME" value="com.step.tw.shapes.RectangleTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
       <extension name="coverage">
@@ -104,6 +86,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UnitTest.shouldCheckTheEqualityOfVolumeUnits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.tw.unit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.step.tw.unit" />
+      <option name="MAIN_CLASS_NAME" value="com.step.tw.unit.UnitTest" />
+      <option name="METHOD_NAME" value="shouldCheckTheEqualityOfVolumeUnits" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UnitTest.twoInchesShouldBeEqualsToFiveCentimeters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
       <extension name="coverage">
@@ -123,10 +121,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.UnitTest" />
+        <item itemvalue="JUnit.UnitTest.shouldCheckTheEqualityOfVolumeUnits" />
         <item itemvalue="JUnit.UnitTest.twoInchesShouldBeEqualsToFiveCentimeters" />
         <item itemvalue="JUnit.UnitTest.oneFeetShouldBeEqualToTwelveInches" />
         <item itemvalue="JUnit.All in java-bootcamp" />
-        <item itemvalue="JUnit.RectangleTest" />
       </list>
     </recent_temporary>
   </component>

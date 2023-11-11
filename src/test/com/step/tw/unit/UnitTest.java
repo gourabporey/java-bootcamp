@@ -28,4 +28,12 @@ public class UnitTest {
 
     assertEquals(oneCm, tenMm);
   }
+
+  @Test
+  void shouldCheckTheEqualityOfVolumeUnits() {
+    Unit oneGallon = Unit.of(1, VolumeUnit.GALLON);
+    Unit three_SevenEightLitres = Unit.of(3.78, VolumeUnit.LITER);
+
+    assertEquals(oneGallon, three_SevenEightLitres);
+  }
 }
