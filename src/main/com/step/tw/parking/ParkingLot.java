@@ -6,8 +6,13 @@ public class ParkingLot {
   private final HashMap<String, Car> cars = new HashMap<>();
   private final int capacity;
 
-  public ParkingLot(int capacity) {
+  private ParkingLot(int capacity) {
     this.capacity = capacity;
+  }
+
+  public static ParkingLot ofCapacity(int capacity) throws IllegalCapacityException {
+    if(capacity <= 0) throw new IllegalCapacityException(capacity);
+    return new ParkingLot(capacity);
   }
 
   public void park(Car car) throws ParkingLotFullException {
