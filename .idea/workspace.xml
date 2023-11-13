@@ -8,8 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d19d4f0-1d58-43b8-b29d-df84e86ff22f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/IllegalCapacityException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/parking/ParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/ParkingLot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/NoParkingLotLeftException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/ParkingAttendant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/step/tw/parking/ParkingLotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/step/tw/parking/ParkingLotTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,8 +134,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ParkingLotTest" />
-        <item itemvalue="JUnit.ParkingLotTest.shouldThrowParkingLotFullExceptionWhileTryingToParkInAFullParkingLot" />
         <item itemvalue="JUnit.ParkingLotTest.shouldParkACar" />
+        <item itemvalue="JUnit.ParkingLotTest.shouldThrowParkingLotFullExceptionWhileTryingToParkInAFullParkingLot" />
         <item itemvalue="JUnit.All in java-bootcamp" />
         <item itemvalue="JUnit.MeasureTest.freezingPointZeroCelsiusShouldBeThirtyTwoFahrenheit" />
       </list>
