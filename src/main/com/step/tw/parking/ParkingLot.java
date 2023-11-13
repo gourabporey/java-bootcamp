@@ -10,7 +10,8 @@ public class ParkingLot {
     this.capacity = capacity;
   }
 
-  public void park(Car car) {
+  public void park(Car car) throws ParkingLotFullException {
+    if(this.isFull()) throw new ParkingLotFullException(capacity);
     this.cars.put(car.getNumber(), car);
   }
 
