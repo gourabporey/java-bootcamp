@@ -30,6 +30,24 @@ public class MeasureTest {
   }
 
   @Test
+  void shouldCheckTheEqualityOfVolumeUnits() {
+    Measure<VolumeUnit> oneGallon = new Measure<>(1, VolumeUnit.GALLON);
+    Measure<VolumeUnit> three_SevenEightLitres = new Measure<>(3.78, VolumeUnit.LITER);
+
+    assertEquals(oneGallon, three_SevenEightLitres);
+  }
+
+  @Test
+  void shouldAddTwoVolumeOfAnyUnitResultingInLiters() {
+    Measure<VolumeUnit> oneGallon = new Measure<>(1, VolumeUnit.GALLON);
+    Measure<VolumeUnit> oneLiter = new Measure<>(1, VolumeUnit.LITER);
+
+    Measure<VolumeUnit> expectedSumOfVolume = new Measure<>(4.78, VolumeUnit.LITER);
+
+    assertEquals(oneGallon.add(oneLiter), expectedSumOfVolume);
+  }
+
+  @Test
   void shouldAddTwoLengthOfSameUnits() {
     Measure<LengthUnit> twoInch = new Measure<>(2, LengthUnit.INCH);
     Measure<LengthUnit> fourInch = new Measure<>(4, LengthUnit.INCH);
