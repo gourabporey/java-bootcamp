@@ -23,6 +23,8 @@ public class Measure<U extends Standardizable> {
     double thisInStandard = this.convertToStandardQuantity();
     double otherInStandard = measure.convertToStandardQuantity();
 
+    System.out.println(thisInStandard + " " + otherInStandard);
+
     return this.unit.areEqual(thisInStandard, otherInStandard);
   }
 

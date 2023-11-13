@@ -45,4 +45,12 @@ public class MeasureTest {
 
     assertEquals(twoInches.add(two_FiveCM), threeInches);
   }
+
+  @Test
+  void hundredCelsiusIsEqualToTwoHundredTwelveFahrenheit() {
+    Measure<TemperatureUnit> hundredCelsius = new Measure<>(100, TemperatureUnit.CELSIUS);
+    Measure<TemperatureUnit> twoHundredTwelveF = new Measure<>(212, TemperatureUnit.FAHRENHEIT);
+
+    assertEquals(hundredCelsius, twoHundredTwelveF);
+  }
 }
