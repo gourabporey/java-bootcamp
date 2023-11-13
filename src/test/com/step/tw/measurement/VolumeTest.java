@@ -21,5 +21,7 @@ public class VolumeTest {
     Volume expectedSumOfVolume = Volume.of(4.78, VolumeUnit.LITER);
 
     assertEquals(oneGallon.add(oneLiter), expectedSumOfVolume);
+
+    assertEquals(4.0, 4.1, 0.1);
   }
 }

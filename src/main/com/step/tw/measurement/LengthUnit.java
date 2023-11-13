@@ -7,7 +7,7 @@ public enum LengthUnit implements Standardizable {
   MILLIMETER(1);
 
   private final double conversionFactor;
-  private static final double errorTolerance = 0.05;
+  private static final double delta = 0.05;
 
   LengthUnit(double conversionFactor) {
     this.conversionFactor = conversionFactor;
@@ -22,6 +22,6 @@ public enum LengthUnit implements Standardizable {
   }
 
   public boolean areEqual(double quantity1, double quantity2) {
-    return Math.abs(quantity1 - quantity2) < errorTolerance;
+    return Math.abs(quantity1 - quantity2) < delta;
   }
 }

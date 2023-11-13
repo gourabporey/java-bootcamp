@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d19d4f0-1d58-43b8-b29d-df84e86ff22f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/measurement/TemperatureUnit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/measurement/Measure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/measurement/Measure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/step/tw/measurement/MeasureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/step/tw/measurement/MeasureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/measurement/TemperatureUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/measurement/TemperatureUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/step/tw/measurement/VolumeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/step/tw/measurement/VolumeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +77,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MeasureTest.hundredCelsiusIsEqualToTwoHundredTwelveFahrenheit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.tw.measurement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.step.tw.measurement" />
+      <option name="MAIN_CLASS_NAME" value="com.step.tw.measurement.MeasureTest" />
+      <option name="METHOD_NAME" value="hundredCelsiusIsEqualToTwoHundredTwelveFahrenheit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MeasureTest.shouldBeAbleToCompareFeetToCentimeters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
       <extension name="coverage">
@@ -88,22 +104,6 @@
       <option name="PACKAGE_NAME" value="com.step.tw.unit" />
       <option name="MAIN_CLASS_NAME" value="com.step.tw.measurement.MeasureTest" />
       <option name="METHOD_NAME" value="shouldBeAbleToCompareFeetToCentimeters" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MeasureTest.shouldBeAbleToCompareFeetToInches" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.step.tw.measurement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.step.tw.unit" />
-      <option name="MAIN_CLASS_NAME" value="com.step.tw.measurement.MeasureTest" />
-      <option name="METHOD_NAME" value="shouldBeAbleToCompareFeetToInches" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -126,10 +126,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MeasureTest" />
-        <item itemvalue="JUnit.All in java-bootcamp" />
+        <item itemvalue="JUnit.MeasureTest.hundredCelsiusIsEqualToTwoHundredTwelveFahrenheit" />
         <item itemvalue="JUnit.com.step.tw.measurement in java-bootcamp" />
+        <item itemvalue="JUnit.All in java-bootcamp" />
         <item itemvalue="JUnit.MeasureTest.shouldBeAbleToCompareFeetToCentimeters" />
-        <item itemvalue="JUnit.MeasureTest.shouldBeAbleToCompareFeetToInches" />
       </list>
     </recent_temporary>
   </component>

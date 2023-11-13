@@ -5,7 +5,7 @@ public enum VolumeUnit implements Standardizable {
   GALLON(3.78);
 
   private final double conversionFactor;
-  private final double errorTolerance = 0.1;
+  private final static double delta = 0.1;
 
   VolumeUnit(double conversionFactor) {
     this.conversionFactor = conversionFactor;
@@ -22,6 +22,6 @@ public enum VolumeUnit implements Standardizable {
 
   @Override
   public boolean areEqual(double quantity1, double quantity2) {
-    return Math.abs(quantity1 - quantity2) < errorTolerance;
+    return Math.abs(quantity1 - quantity2) < delta;
   }
 }
