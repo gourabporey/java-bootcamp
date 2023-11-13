@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d19d4f0-1d58-43b8-b29d-df84e86ff22f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/ParkingLot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/step/tw/parking/ParkingLotTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/measurement/Measurable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/measurement/Measure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/measurement/Measure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/measurement/TemperatureUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/measurement/TemperatureUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/step/tw/measurement/MeasureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/step/tw/measurement/MeasureTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,11 +44,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "main",
+    "last_directory_selection": "/Users/gourabporey/projects/java-bootcamp/src/main/com/step/tw",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.step.tw.parking" />
       <recent name="com.step.tw.measurement" />
       <recent name="com.step.tw.unit" />
     </key>
@@ -54,18 +60,11 @@
       <recent name="com.step.tw.unit" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MeasureTest.freezingPointZeroCelsiusShouldBeThirtyTwoFahrenheit">
-    <configuration name="MeasureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ParkingLotTest">
+    <configuration name="All in java-bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.step.tw.measurement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.step.tw.unit" />
-      <option name="MAIN_CLASS_NAME" value="com.step.tw.measurement.MeasureTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -102,41 +101,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.step.tw in java-bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkingLotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.step.tw.*" />
+          <option name="PATTERN" value="com.step.tw.parking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.step.tw" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="com.step.tw.parking" />
+      <option name="MAIN_CLASS_NAME" value="com.step.tw.parking.ParkingLotTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.step.tw.measurement in java-bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkingLotTest.shouldParkACar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.step.tw.measurement.*" />
+          <option name="PATTERN" value="com.step.tw.parking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.step.tw.measurement" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="PACKAGE_NAME" value="com.step.tw.parking" />
+      <option name="MAIN_CLASS_NAME" value="com.step.tw.parking.ParkingLotTest" />
+      <option name="METHOD_NAME" value="shouldParkACar" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ParkingLotTest" />
+        <item itemvalue="JUnit.ParkingLotTest.shouldParkACar" />
+        <item itemvalue="JUnit.All in java-bootcamp" />
         <item itemvalue="JUnit.MeasureTest.freezingPointZeroCelsiusShouldBeThirtyTwoFahrenheit" />
         <item itemvalue="JUnit.MeasureTest.negativeFortyDegreeShouldBeEqualForCelsiusAndFahrenheit" />
-        <item itemvalue="JUnit.com.step.tw.measurement in java-bootcamp" />
-        <item itemvalue="JUnit.MeasureTest" />
-        <item itemvalue="JUnit.com.step.tw in java-bootcamp" />
       </list>
     </recent_temporary>
   </component>
