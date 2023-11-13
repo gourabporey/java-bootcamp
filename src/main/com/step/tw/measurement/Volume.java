@@ -1,10 +1,11 @@
-package com.step.tw.unit;
+package com.step.tw.measurement;
 
 import java.util.Objects;
 
 public class Volume {
   private final double measurement;
   private final VolumeUnit volumeUnit;
+  private static final double errorTolerance = 0.01;
 
   private Volume(double measurement, VolumeUnit volumeUnit) {
     this.measurement = measurement;
@@ -24,7 +25,7 @@ public class Volume {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     Volume volume = (Volume) o;
-    return Math.abs(this.convertToStandard() - volume.convertToStandard()) < 0.01;
+    return Math.abs(this.convertToStandard() - volume.convertToStandard()) < errorTolerance;
   }
 
   @Override

@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d19d4f0-1d58-43b8-b29d-df84e86ff22f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/unit/Volume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/unit/Volume.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/step/tw/unit/VolumeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/step/tw/unit/VolumeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/measurement/LengthUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/measurement/Measure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/measurement/Standardizable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/measurement/VolumeUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/step/tw/measurement/MeasureTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/predictor/Chance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/probability/Chance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/predictor/InvalidChanceRangeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/probability/InvalidChanceRangeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/predictor/Todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/probability/Todo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/unit/Length.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/measurement/Length.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/unit/LengthUnit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/unit/Measurable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/measurement/Measurable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/unit/Volume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/measurement/Volume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/unit/VolumeUnit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/step/tw/predictor/ChanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/step/tw/probability/ChanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/step/tw/unit/LengthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/step/tw/measurement/LengthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/step/tw/unit/VolumeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/step/tw/measurement/VolumeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -38,7 +53,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "full.screen.before.presentation.mode": "false"
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "main"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -49,7 +65,7 @@
       <recent name="com.step.tw.unit" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.com.step.tw.unit in java-bootcamp">
+  <component name="RunManager" selected="JUnit.MeasureTest">
     <configuration name="All in java-bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
       <option name="PACKAGE_NAME" value="" />
@@ -58,62 +74,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LengthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MeasureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.step.tw.unit.*" />
+          <option name="PATTERN" value="com.step.tw.measurement.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.step.tw.unit" />
-      <option name="MAIN_CLASS_NAME" value="com.step.tw.unit.LengthTest" />
+      <option name="MAIN_CLASS_NAME" value="com.step.tw.measurement.MeasureTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LengthTest.shouldAddTwoLengthOfSameUnits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MeasureTest.shouldBeAbleToCompareFeetToCentimeters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.step.tw.unit.*" />
+          <option name="PATTERN" value="com.step.tw.measurement.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.step.tw.unit" />
-      <option name="MAIN_CLASS_NAME" value="com.step.tw.unit.LengthTest" />
-      <option name="METHOD_NAME" value="shouldAddTwoLengthOfSameUnits" />
+      <option name="MAIN_CLASS_NAME" value="com.step.tw.measurement.MeasureTest" />
+      <option name="METHOD_NAME" value="shouldBeAbleToCompareFeetToCentimeters" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VolumeTest.shouldCheckTheEqualityOfVolumeUnits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MeasureTest.shouldBeAbleToCompareFeetToInches" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.step.tw.unit.*" />
+          <option name="PATTERN" value="com.step.tw.measurement.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.step.tw.unit" />
-      <option name="MAIN_CLASS_NAME" value="com.step.tw.unit.VolumeTest" />
-      <option name="METHOD_NAME" value="shouldCheckTheEqualityOfVolumeUnits" />
+      <option name="MAIN_CLASS_NAME" value="com.step.tw.measurement.MeasureTest" />
+      <option name="METHOD_NAME" value="shouldBeAbleToCompareFeetToInches" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.step.tw.unit in java-bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="com.step.tw.measurement in java-bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.step.tw.unit.*" />
+          <option name="PATTERN" value="com.step.tw.measurement.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.step.tw.unit" />
+      <option name="PACKAGE_NAME" value="com.step.tw.measurement" />
       <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.com.step.tw.unit in java-bootcamp" />
+        <item itemvalue="JUnit.MeasureTest" />
         <item itemvalue="JUnit.All in java-bootcamp" />
-        <item itemvalue="JUnit.VolumeTest.shouldCheckTheEqualityOfVolumeUnits" />
-        <item itemvalue="JUnit.LengthTest" />
-        <item itemvalue="JUnit.LengthTest.shouldAddTwoLengthOfSameUnits" />
+        <item itemvalue="JUnit.com.step.tw.measurement in java-bootcamp" />
+        <item itemvalue="JUnit.MeasureTest.shouldBeAbleToCompareFeetToCentimeters" />
+        <item itemvalue="JUnit.MeasureTest.shouldBeAbleToCompareFeetToInches" />
       </list>
     </recent_temporary>
   </component>

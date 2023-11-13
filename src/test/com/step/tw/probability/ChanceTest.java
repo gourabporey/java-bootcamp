@@ -1,4 +1,4 @@
-package com.step.tw.predictor;
+package com.step.tw.probability;
 
 import org.junit.jupiter.api.Test;
 

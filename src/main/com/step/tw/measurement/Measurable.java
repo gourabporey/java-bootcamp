@@ -1,4 +1,4 @@
-package com.step.tw.unit;
+package com.step.tw.measurement;
 
 public interface Measurable {
   double convertToStandard(double measurement);

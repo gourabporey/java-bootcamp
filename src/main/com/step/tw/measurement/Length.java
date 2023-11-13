@@ -1,10 +1,11 @@
-package com.step.tw.unit;
+package com.step.tw.measurement;
 
 import java.util.Objects;
 
 public class Length {
   private final double measurement;
   private final LengthUnit lengthUnit;
+  private static final double errorTolerance = 1;
 
   private Length(double measurement, LengthUnit lengthUnit) {
     this.measurement = measurement;
@@ -20,7 +21,7 @@ public class Length {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     Length unit = (Length) o;
-    return Math.abs(this.convertToStandard() - unit.convertToStandard()) < 1;
+    return Math.abs(this.convertToStandard() - unit.convertToStandard()) < errorTolerance;
   }
 
   private double convertToStandard() {
