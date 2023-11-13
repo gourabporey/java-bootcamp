@@ -3,8 +3,8 @@ package com.step.tw.measurement;
 import java.util.function.Function;
 
 public enum TemperatureUnit implements Standardizable {
-  FAHRENHEIT(a -> a),
-  CELSIUS(a -> a * 1.8 + 32);
+  FAHRENHEIT(temperatureInFahrenheit -> temperatureInFahrenheit),
+  CELSIUS(temperatureInCelsius -> temperatureInCelsius * 1.8 + 32);
 
   private final Function<Double, Double> converter;
   private static final double delta = 0.1;
@@ -14,8 +14,8 @@ public enum TemperatureUnit implements Standardizable {
   }
 
   @Override
-  public double convertToStandard(double quantity) {
-    return this.converter.apply(quantity);
+  public double convertToStandard(double temperature) {
+    return this.converter.apply(temperature);
   }
 
   @Override

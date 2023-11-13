@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7d19d4f0-1d58-43b8-b29d-df84e86ff22f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/measurement/Measurable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/measurement/Measure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/measurement/Measure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/measurement/TemperatureUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/measurement/TemperatureUnit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/step/tw/measurement/MeasureTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/step/tw/measurement/MeasureTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,15 +54,7 @@
       <recent name="com.step.tw.unit" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.com.step.tw.measurement in java-bootcamp">
-    <configuration name="All in java-bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-bootcamp" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MeasureTest.freezingPointZeroCelsiusShouldBeThirtyTwoFahrenheit">
     <configuration name="MeasureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
       <extension name="coverage">
@@ -75,7 +70,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MeasureTest.hundredCelsiusIsEqualToTwoHundredTwelveFahrenheit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MeasureTest.freezingPointZeroCelsiusShouldBeThirtyTwoFahrenheit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -85,7 +80,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.step.tw.measurement" />
       <option name="MAIN_CLASS_NAME" value="com.step.tw.measurement.MeasureTest" />
-      <option name="METHOD_NAME" value="hundredCelsiusIsEqualToTwoHundredTwelveFahrenheit" />
+      <option name="METHOD_NAME" value="freezingPointZeroCelsiusShouldBeThirtyTwoFahrenheit" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MeasureTest.negativeFortyDegreeShouldBeEqualForCelsiusAndFahrenheit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.tw.measurement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.step.tw.measurement" />
+      <option name="MAIN_CLASS_NAME" value="com.step.tw.measurement.MeasureTest" />
+      <option name="METHOD_NAME" value="negativeFortyDegreeShouldBeEqualForCelsiusAndFahrenheit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -121,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MeasureTest.freezingPointZeroCelsiusShouldBeThirtyTwoFahrenheit" />
+        <item itemvalue="JUnit.MeasureTest.negativeFortyDegreeShouldBeEqualForCelsiusAndFahrenheit" />
         <item itemvalue="JUnit.com.step.tw.measurement in java-bootcamp" />
         <item itemvalue="JUnit.MeasureTest" />
         <item itemvalue="JUnit.com.step.tw in java-bootcamp" />
-        <item itemvalue="JUnit.MeasureTest.hundredCelsiusIsEqualToTwoHundredTwelveFahrenheit" />
-        <item itemvalue="JUnit.All in java-bootcamp" />
       </list>
     </recent_temporary>
   </component>

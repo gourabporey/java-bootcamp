@@ -15,11 +15,11 @@ public class Measure<U extends Standardizable> {
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
-    Measure<U> measure = (Measure<U>) o;
+    Measure<?> measure = (Measure<? extends Standardizable>) o;
     return isOfSameType(measure) && isQuantityEqual(measure);
   }
 
-  private boolean isQuantityEqual(Measure<U> measure) {
+  private boolean isQuantityEqual(Measure<? extends Standardizable> measure) {
     double thisInStandard = this.convertToStandardQuantity();
     double otherInStandard = measure.convertToStandardQuantity();
 
@@ -31,7 +31,7 @@ public class Measure<U extends Standardizable> {
     return Objects.hash(quantity, unit);
   }
 
-  private boolean isOfSameType(Measure<U> measure) {
+  private boolean isOfSameType(Measure<?> measure) {
     Standardizable thisStandardUnit = this.unit.getStandardUnit();
     Standardizable otherStandardUnit = measure.unit.getStandardUnit();
 

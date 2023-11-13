@@ -65,10 +65,26 @@ public class MeasureTest {
   }
 
   @Test
-  void hundredCelsiusIsEqualToTwoHundredTwelveFahrenheit() {
-    Measure<TemperatureUnit> hundredCelsius = new Measure<>(100, TemperatureUnit.CELSIUS);
-    Measure<TemperatureUnit> twoHundredTwelveF = new Measure<>(212, TemperatureUnit.FAHRENHEIT);
+  void boilingPointHundredCelsiusShouldBeTwoHundredTwelveFahrenheit() {
+    Measure<TemperatureUnit> boilingPointInC = new Measure<>(100, TemperatureUnit.CELSIUS);
+    Measure<TemperatureUnit> boilingPointInF = new Measure<>(212, TemperatureUnit.FAHRENHEIT);
 
-    assertEquals(hundredCelsius, twoHundredTwelveF);
+    assertEquals(boilingPointInC, boilingPointInF);
+  }
+
+  @Test
+  void freezingPointZeroCelsiusShouldBeThirtyTwoFahrenheit() {
+    Measure<TemperatureUnit> freezingPointInF = new Measure<>(32, TemperatureUnit.FAHRENHEIT);
+    Measure<TemperatureUnit> freezingPointInC = new Measure<>(0, TemperatureUnit.CELSIUS);
+
+    assertEquals(freezingPointInC, freezingPointInF);
+  }
+
+  @Test
+  void negativeFortyDegreeShouldBeEqualForCelsiusAndFahrenheit() {
+    Measure<TemperatureUnit> negFortyCelsius = new Measure<>(-40, TemperatureUnit.CELSIUS);
+    Measure<TemperatureUnit> negFortyFahrenheit = new Measure<>(-40, TemperatureUnit.FAHRENHEIT);
+
+    assertEquals(negFortyCelsius, negFortyFahrenheit);
   }
 }
