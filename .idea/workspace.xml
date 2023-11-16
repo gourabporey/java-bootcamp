@@ -8,9 +8,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d19d4f0-1d58-43b8-b29d-df84e86ff22f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/NoParkingLotLeftException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/ParkingAttendant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/step/tw/parking/ParkingLotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/step/tw/parking/ParkingLotTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/models/IsFullObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/models/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/models/ParkingAssistant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/models/ParkingAttendant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/models/ParkingEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/models/ParkingLot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/services/CarLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/services/DataLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/services/ParkingLotService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/services/ParkingLotServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/step/tw/parking/models/ParkingAttendantTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/parking/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/models/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/parking/IllegalCapacityException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/exceptions/IllegalCapacityException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/parking/NoParkingLotLeftException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/exceptions/NoParkingLotLeftException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/parking/ParkingAttendant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/parking/ParkingLot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/step/tw/parking/ParkingLotFullException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/step/tw/parking/exceptions/ParkingLotFullException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/step/tw/parking/ParkingLotTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,18 +37,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2Y0yTH9KPELCSfZqQp7byQfU7Kx" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -42,6 +60,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "main",
     "last_directory_selection": "/Users/gourabporey/projects/java-bootcamp/src/main/com/step/tw",
@@ -51,34 +71,64 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.step.tw.parking.models" />
       <recent name="com.step.tw.parking" />
       <recent name="com.step.tw.measurement" />
       <recent name="com.step.tw.unit" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.step.tw.unit" />
     </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.step.tw.parking.models" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParkingLotTest">
-    <configuration name="All in java-bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ParkingAttendantTest">
+    <configuration name="ParkingAttendantTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.tw.parking.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.step.tw.parking.models" />
+      <option name="MAIN_CLASS_NAME" value="com.step.tw.parking.models.ParkingAttendantTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MeasureTest.freezingPointZeroCelsiusShouldBeThirtyTwoFahrenheit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkingAttendantTest.shouldParkACar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.step.tw.measurement.*" />
+          <option name="PATTERN" value="com.step.tw.parking.models.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.step.tw.measurement" />
-      <option name="MAIN_CLASS_NAME" value="com.step.tw.measurement.MeasureTest" />
-      <option name="METHOD_NAME" value="freezingPointZeroCelsiusShouldBeThirtyTwoFahrenheit" />
+      <option name="PACKAGE_NAME" value="com.step.tw.parking.models" />
+      <option name="MAIN_CLASS_NAME" value="com.step.tw.parking.models.ParkingAttendantTest" />
+      <option name="METHOD_NAME" value="shouldParkACar" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingAttendantTest.shouldThrowNoParkingLeftExceptionWhenCapacityIsReached" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.tw.parking.models.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.step.tw.parking.models" />
+      <option name="MAIN_CLASS_NAME" value="com.step.tw.parking.models.ParkingAttendantTest" />
+      <option name="METHOD_NAME" value="shouldThrowNoParkingLeftExceptionWhenCapacityIsReached" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -88,7 +138,7 @@
       <module name="java-bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.step.tw.parking.*" />
+          <option name="PATTERN" value="com.step.tw.parking.exceptions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,7 +153,7 @@
       <module name="java-bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.step.tw.parking.*" />
+          <option name="PATTERN" value="com.step.tw.parking.exceptions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,29 +165,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParkingLotTest.shouldThrowParkingLotFullExceptionWhileTryingToParkInAFullParkingLot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java-bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.step.tw.parking.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.step.tw.parking" />
-      <option name="MAIN_CLASS_NAME" value="com.step.tw.parking.ParkingLotTest" />
-      <option name="METHOD_NAME" value="shouldThrowParkingLotFullExceptionWhileTryingToParkInAFullParkingLot" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ParkingLotTest" />
+        <item itemvalue="JUnit.ParkingAttendantTest" />
+        <item itemvalue="JUnit.ParkingAttendantTest.shouldThrowNoParkingLeftExceptionWhenCapacityIsReached" />
+        <item itemvalue="JUnit.ParkingAttendantTest.shouldParkACar" />
         <item itemvalue="JUnit.ParkingLotTest.shouldParkACar" />
-        <item itemvalue="JUnit.ParkingLotTest.shouldThrowParkingLotFullExceptionWhileTryingToParkInAFullParkingLot" />
-        <item itemvalue="JUnit.All in java-bootcamp" />
-        <item itemvalue="JUnit.MeasureTest.freezingPointZeroCelsiusShouldBeThirtyTwoFahrenheit" />
+        <item itemvalue="JUnit.ParkingLotTest" />
       </list>
     </recent_temporary>
   </component>
@@ -151,5 +185,20 @@
       <updated>1699676798075</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/com/step/tw/parking/models/ParkingAttendantTest.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

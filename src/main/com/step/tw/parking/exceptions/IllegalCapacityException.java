@@ -1,4 +1,4 @@
-package com.step.tw.parking;
+package com.step.tw.parking.exceptions;
 
 public class IllegalCapacityException extends Throwable {
   public IllegalCapacityException(int capacity) {

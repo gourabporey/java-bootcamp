@@ -1,4 +1,4 @@
-package com.step.tw.parking;
+package com.step.tw.parking.exceptions;
 
 public class ParkingLotFullException extends Throwable {
   public ParkingLotFullException(int capacity) {

@@ -1,4 +1,4 @@
-package com.step.tw.parking;
+package com.step.tw.parking.models;
 
 import java.util.Objects;
 
